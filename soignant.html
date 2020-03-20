@@ -16,7 +16,7 @@
           Application Hôpital
         </div>
         <nav class="app_aside__navigation">
-          <a href="" class="app_aside__navigation__link">
+          <a href="soignant.html" class="app_aside__navigation__link app_aside__navigation__link--active">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -33,6 +33,28 @@
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
             <span class="app_aside__navigation__name">Home</span>
+          </a>
+          <a href="proposition_aide.html" class="app_aside__navigation__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="app_aside__navigation__icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+              <line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line>
+              <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+            </svg>
+            <span class="app_aside__navigation__name">Propostion d'aide</span>
+          </a>
+          <a href="demande_aide.html" class="app_aside__navigation__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="app_aside__navigation__icon">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            <span class="app_aside__navigation__name">Demande d'aide</span>
           </a>
         </nav>
         <div class="app_aside__footer">
@@ -64,7 +86,7 @@
         </h2>
         <br>
 
-        <table width="1200">
+        <table>
           <tr>
             <th>Code Lit</th>
             <th>Disponibilit&eacute;</th>
@@ -219,167 +241,7 @@
             <td>15 kms</td>
           </tr>
         </table>
-
-
-
-        <br><br>
-        <hr><br><br>
-        <h2>Faire une demande d'aide</h2>
-        R&eacute;digez votre demande :
-        <br>
-        <textarea cols="100" rows="10"></textarea>
-        <br>
-        <input type="button" value="envoyer la demande">
-
-        <br><br>
-        <hr><br><br>
-        <h2>Faire une proposition d'aide</h2>
-        R&eacute;digez votre proposition :
-        <br>
-        <textarea cols="100" rows="10"></textarea>
-        <br>
-        <input type="button" value="envoyer la proposition">
-
-        <br><br>
-        <hr><br><br>
-        <h2>S&eacute;lectionner une proposition d'aide</h2>
-        <table width="1200">
-          <tr>
-            <th>Emetteur</th>
-            <th>T&eacute;l&eacute;phone</th>
-            <th>Texte de l'aide</th>
-            <th>Distance avec vous</th>
-            <th>Matching</th>
-          </tr>
-          <tr>
-            <td>CHU N&icirc;mes</td>
-            <td>0612131415</td>
-            <td>Nous avons 500 masques de chirurgiens</td>
-            <td>750 kms</td>
-            <td><input type="button" value="je suis interess&eacute;"></td>
-          </tr>
-          <tr>
-            <td>CHU Lille</td>
-            <td>0612131416</td>
-            <td>Nous avons 300 paires de gants de chirurgiens</td>
-            <td>350 kms</td>
-            <td><input type="button" value="je suis interess&eacute;"></td>
-          </tr>
-        </table>
-
-
-        <br><br>
-        <hr><br><br>
-        <h2>Lister les demandes d'aide</h2>
-        <table width="1200">
-          <tr>
-            <th>Emetteur</th>
-            <th>T&eacute;l&eacute;phone</th>
-            <th>Texte de l'aide</th>
-            <th>Distance avec vous</th>
-            <th>Matching</th>
-          </tr>
-          <tr>
-            <td>CHU Lille</td>
-            <td>0612131416</td>
-            <td>Il nous manque 500 masques de chirurgiens</td>
-            <td>350 kms</td>
-            <td><input type="button" value="je peux aider"></td>
-          </tr>
-          <tr>
-            <td>CHU N&icirc;mes</td>
-            <td>0612131415</td>
-            <td>Il nous manque 300 paires de gants de chirurgiens</td>
-            <td>750 kms</td>
-            <td><input type="button" value="je peux aider"></td>
-          </tr>
-        </table>
       </main>
     </div>
-
-    <!-- <center><h1>Fonctionnalit&eacute;s du soignant</h1></center>
-
-
-<br><br>
-<h2>Situation d'occupation de lits dans la structure</h2>
-
-<br>
-
-<table width="1200">
-<tr>
-<th>Code Lit</th><th>Disponibilit&eacute;</th><th>Patient</th><th>Arriv&eacute;e</th><th>Transfert</th>
-</tr>
-<tr><td colspan="5" align="center"><br><br>Lits occup&eacute;s actuellement : 6<br><br></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV1</td><td>Occup&eacute;</td><td>Jean Dupont (65 ans)</td><td>18/03/20 10:40</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV2</td><td>Occup&eacute;</td><td>Serge Dupont (71 ans)</td><td>19/03/20 07:20</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV3</td><td>Occup&eacute;</td><td>Jeanne Durand (47 ans)</td><td>30/03/20 09:15</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV4</td><td>Occup&eacute;</td><td>Serge Durand (32 ans)</td><td>15/03/20 15:20</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV5</td><td>Occup&eacute;</td><td>Fabienne Dupont (66 ans)</td><td>12/03/20 14:30</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr bgcolor="#ababab"><td>HOPSERV6</td><td>Occup&eacute;</td><td>Sylvie Martin (81 ans)</td><td>29/03/20 18:00</td><td align="center"><input type="button" value="transferer"></td></tr>
-<tr><td colspan="5" align="center"><br><br>Lits r&eacute;serv&eacute;s par un service ou un patient : 2<br><br></td></tr>
-<tr bgcolor="#dedede"><td>HOPSERV7</td><td>R&eacute;serv&eacute; en attente</td><td>Laurent Pasmoi (48 ans)</td><td>05/04/20 10:00</td><td align="center"><input type="button" value="liberer"><input type="button" value="valider arriv&eacute;e"></td></tr>
-<tr bgcolor="#dedede"><td>HOPSERV8</td><td>R&eacute;serv&eacute; en attente</td><td>Serge Pasmoinonplus (64 ans)</td><td>03/03/20 14:00</td><td align="center"><input type="button" value="liberer"><input type="button" value="valider arriv&eacute;e"></td></tr>
-<tr><td colspan="5" align="center"><br><br>Lits disponibles pour patients et services : 2<br><br></td></tr>
-<tr bgcolor="#ffffff"><td>HOPSERV9</td><td>&nbsp;</td><td>&nbsp;</td>&nbsp;</td></tr>
-<tr bgcolor="#ffffff"><td>HOPSERV10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-</table>
-
-<br><br><hr><br><br>
-<h2>Recherche de lits en transfert</h2>
-
-<br><br>
-Pour le patient "Jeanne Durand (47ans)", les possibilit&eacute;s de transfert sont :
-<br><br><br>
-<table width="1200" border="0">
-<tr><th>Hopital</th><th>Service (T&eacute;l&eacute;phone)</th><th>Distance de transfert en ambulance</th><th>R&eacute;server</th><th>Date de transfert</th></tr>
-<tr><td>Piti&eacute; Salle p&eacute;tri&egrave;re - Paris</td><td>R&eacute;animation (0612345678)</td><td align="center">5 kms</td><td align="center"><input type="button" value="reserver"></td><td><input></td></tr>
-<tr><td>Hopital Saint Louis - La rochelle</td><td>Urgences (0698765432)</td><td align="center">400 kms</td><td align="center"><input type="button" value="reserver"></td><td><input></td></tr>
-<tr><td>Clinique Saint Andr&eacute; - Bordeaux</td><td>Urgences (0601020304)</td><td align="center">800 kms</td><td align="center"><input type="button" value="reserver"></td><td><input></td></tr>
-</table>
-
-
-<br><br><hr><br><br>
-<h2>Voir les soignants auxiliaires disponibles</h2>
-<br><br>
-<table width="1200" border="0">
-<tr><th>Identit&eacute;</th><th>T&eacute;l&eacute;phone</th><th>Age</th><th>Adresse</th><th>Sp&eacute;cialit&eacute;</th><th>Distance</th></tr>
-<tr><td>Docteur Marcel Peutaider</td><td>0634353637</td><td>66 ans</td><td>Besan&ccedil;on</td><td>M&eacute;decine g&eacute;n&eacute;rale</td><td>450 kms</td></tr>
-<tr><td>Interne Sophie Dupond</td><td>0634353638</td><td>25 ans</td><td>Versailles</td><td>Chirurgie</td><td>15 kms</td></tr>
-</table>
-
-
-
-<br><br><hr><br><br>
-<h2>Faire une demande d'aide</h2>
-R&eacute;digez votre demande :
-<br>
-<textarea cols="100" rows="10"></textarea>
-<br>
-<input type="button" value="envoyer la demande">
-
-<br><br><hr><br><br>
-<h2>Faire une proposition d'aide</h2>
-R&eacute;digez votre proposition :
-<br>
-<textarea cols="100" rows="10"></textarea>
-<br>
-<input type="button" value="envoyer la proposition">
-
-<br><br><hr><br><br>
-<h2>S&eacute;lectionner une proposition d'aide</h2>
-<table width="1200">
-<tr><th>Emetteur</th><th>T&eacute;l&eacute;phone</th><th>Texte de l'aide</th><th>Distance avec vous</th><th>Matching</th></tr>
-<tr><td>CHU N&icirc;mes</td><td>0612131415</td><td>Nous avons 500 masques de chirurgiens</td><td>750 kms</td><td><input type="button" value="je suis interess&eacute;"></td></tr>
-<tr><td>CHU Lille</td><td>0612131416</td><td>Nous avons 300 paires de gants de chirurgiens</td><td>350 kms</td><td><input type="button" value="je suis interess&eacute;"></td></tr>
-</table>
-
-
-<br><br><hr><br><br>
-<h2>Lister les demandes d'aide</h2>
-<table width="1200">
-<tr><th>Emetteur</th><th>T&eacute;l&eacute;phone</th><th>Texte de l'aide</th><th>Distance avec vous</th><th>Matching</th></tr>
-<tr><td>CHU Lille</td><td>0612131416</td><td>Il nous manque 500 masques de chirurgiens</td><td>350 kms</td><td><input type="button" value="je peux aider"></td></tr>
-<tr><td>CHU N&icirc;mes</td><td>0612131415</td><td>Il nous manque 300 paires de gants de chirurgiens</td><td>750 kms</td><td><input type="button" value="je peux aider"></td></tr>
-</table> -->
   </body>
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sfeir D&eacute;mo Demande d'aide</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="app_aside">
+        <div class="app_aside__header">
+          Application Hôpital
+        </div>
+        <nav class="app_aside__navigation">
+          <a href="soignant.html" class="app_aside__navigation__link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="app_aside__navigation__icon"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="app_aside__navigation__name">Home</span>
+          </a>
+          <a href="proposition_aide.html" class="app_aside__navigation__link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="app_aside__navigation__icon"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+              <line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line>
+              <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+            </svg>
+            <span class="app_aside__navigation__name">Propostion d'aide</span>
+          </a>
+          <a
+            href="demande_aide.html"
+            class="app_aside__navigation__link app_aside__navigation__link--active"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="app_aside__navigation__icon"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            <span class="app_aside__navigation__name">Demande d'aide</span>
+          </a>
+        </nav>
+        <div class="app_aside__footer">
+          <div class="app_aside__user_icon">MP</div>
+          <div class="app_aside__user_name">Docteur Marcel Peutaider</div>
+          <button class="app_aside__logout">
+            Se déconnecter
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="app_aside__logout__icon"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </aside>
+      <main class="app_main">
+        <h2 class="app_main__title">
+          Lister les demandes d'aide
+        </h2>
+        <br />
+
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Emetteur</th>
+                <th>T&eacute;l&eacute;phone</th>
+                <th>Texte de l'aide</th>
+                <th>Distance avec vous</th>
+                <th>Matching</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CHU Lille</td>
+                <td>0612131416</td>
+                <td>Il nous manque 500 masques de chirurgiens</td>
+                <td>350 kms</td>
+                <td>
+                  <button class="table_button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="table_button__icon"
+                    >
+                      <path
+                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+                      ></path>
+                    </svg>
+                    je peux aider
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>CHU N&icirc;mes</td>
+                <td>0612131415</td>
+                <td>Il nous manque 300 paires de gants de chirurgiens</td>
+                <td>750 kms</td>
+                <td>
+                  <button class="table_button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="table_button__icon"
+                    >
+                      <path
+                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+                      ></path>
+                    </svg>
+                    je peux aider
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <form class="help_form">
+          <h3>Faire une demande d'aide</h3>
+          <p>R&eacute;digez votre demande :</p>
+          <br />
+          <textarea cols="100" rows="10"></textarea>
+          <br />
+          <button class="help_form__button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-send"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            envoyer la demande
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

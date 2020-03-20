@@ -70,11 +70,15 @@ body {
   display: flex;
   align-items: center;
   padding: 1.5rem 1rem 1.5rem 4rem;
-  color: hsl(200, 76%, 41%);
+  color: hsl(0, 1%, 46%);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
 }
+.app_aside__navigation__link--active {
+  color: hsl(200, 76%, 41%);
+}
+
 .app_aside__navigation__icon {
   margin-right: 1rem;
 }
@@ -130,6 +134,9 @@ body {
     width: 100%;
     border-right: none;
     border-top: 1px solid hsl(0, 0%, 95%);
+  }
+  .app_aside__navigation {
+    display: flex;
   }
   .app_aside__navigation__link {
     padding: 1.5rem 1rem 1.5rem 1rem;
@@ -262,4 +269,85 @@ body {
   justify-content: space-between;
   font-size: 1.2rem;
   margin-top: 1.5rem;
+}
+
+/* Table
+   ========================================================================== */
+.table {
+  background: hsl(0, 100%, 100%);
+  border: 1px solid hsl(220, 27%, 94%);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 0.4rem;
+}
+table {
+  min-width: 100%;
+  border-spacing: 0;
+  position: relative;
+}
+thead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 46%);
+}
+th {
+  height: 4.4rem;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-bottom: 1px solid hsl(220, 27%, 94%);
+  background-color: hsl(0, 100%, 100%);
+  white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+}
+td {
+  height: 5.2rem;
+  padding: 0 1.2rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-feature-settings: "tnum";
+  border-bottom: 1px solid hsl(220, 27%, 94%);
+}
+
+.table_button {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  font-weight: 400;
+  color: hsl(0, 100%, 100%);
+  border-radius: 0.3rem;
+  border: 0;
+  background: hsl(200, 76%, 41%);
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+}
+
+.table_button__icon {
+  margin-right: 1rem;
+}
+
+/* Help form
+   ========================================================================== */
+.help_form {
+  margin-top: 10rem;
+  border-top: 1px solid hsl(200, 12%, 85%);
+}
+.help_form__button {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 6rem;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  color: hsl(200, 76%, 41%);
+  border: 2px solid hsl(200, 76%, 41%);
+  background: hsl(0, 100%, 100%);
+  cursor: pointer;
+}
+
+textarea {
+  border: 1px solid #e0e0e0;
 }
