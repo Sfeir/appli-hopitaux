@@ -28,6 +28,117 @@ body {
   height: 100%;
 }
 
+/* App Layout
+   ========================================================================== */
+.app {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.app_main {
+  flex: 1;
+  background: hsl(220, 60%, 99%);
+  padding: 3rem;
+  overflow: auto;
+}
+
+.app_main__title {
+  color: hsl(0, 0%, 36%);
+}
+
+.app_aside {
+  display: flex;
+  flex-direction: column;
+  width: 27rem;
+  background: hsl(0, 100%, 100%);
+  border-right: 1px solid hsl(0, 0%, 95%);
+}
+.app_aside__header {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+.app_aside__navigation {
+  flex: 1;
+}
+.app_aside__navigation__link {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem 1.5rem 4rem;
+  color: hsl(200, 76%, 41%);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+.app_aside__navigation__icon {
+  margin-right: 1rem;
+}
+.app_aside__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  padding-top: 5rem;
+  border-top: 1px solid hsl(0, 0%, 95%);
+}
+.app_aside__user_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: green;
+  color: hsl(0, 100%, 100%);
+  margin-bottom: 1rem;
+}
+.app_aside__user_name {
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.app_aside__logout {
+  display: flex;
+  align-items: center;
+  border-radius: 6rem;
+  padding: 1rem;
+  font-weight: 500;
+  color: hsl(200, 76%, 41%);
+  border: 2px solid hsl(200, 76%, 41%);
+  background: hsl(0, 100%, 100%);
+  cursor: pointer;
+}
+.app_aside__logout__icon {
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .app {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .app_aside__header,
+  .app_aside__footer {
+    display: none;
+  }
+  .app_aside {
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid hsl(0, 0%, 95%);
+  }
+  .app_aside__navigation__link {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  .app_aside__navigation__name {
+    display: none;
+  }
+}
+
 /* Login Page
    ========================================================================== */
 
