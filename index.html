@@ -1,25 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Sfeir D&eacute;mo hopitaux</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa" />
   </head>
   <body>
-  Cas de <a href="patient.html">cr&eacute;ation du patient</a>
+    <!-- Cas de <a href="patient.html">cr&eacute;ation du patient</a>
   <br><br>
   <a href="soignant.html">Interface du soignant</a>
   <br><br>
-  <a href="bienfaiteur.html">Interface du bienfaiteur</a>
+  <a href="bienfaiteur.html">Interface du bienfaiteur</a> -->
 
-
-  <br><br><br>
+    <div class="login_page">
+      <div class="login_page__left"></div>
+      <div class="login_page__right">
+        <form class="login_form">
+          <h1 class="login_form__title">Connexion &agrave; l'application</h1>
+          <p class="login_form__text">
+            Veuillez saisir vos identifiants afin de pouvoir vous connecter à
+            l'application
+          </p>
+          <div class="login_form__field">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="login_form__field__icon"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <input class="login_form__input" placeholder="Email" />
+          </div>
+          <div class="login_form__field">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="login_form__field__icon"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <input class="login_form__input" placeholder="Password" />
+          </div>
+          <input
+            class="login_form__submit"
+            type="submit"
+            value="Se connecter"
+          />
+          <div class="login_form__bottom">
+            <label>
+              <input type="checkbox" tabindex="0" value="" />
+              Se souvenir de moi
+            </label>
+            <a href="">Mot de passe oublié ?</a>
+          </div>
+        </form>
+        <div class="login_page__right__link">
+          <a href="patient.html">cr&eacute;ation du patient</a>
+          <a href="soignant.html">Interface du soignant</a>
+          <a href="bienfaiteur.html">Interface du bienfaiteur</a>
+        </div>
+      </div>
+    </div>
+    <!-- <br><br><br>
   <center>
   Connexion &agrave; l'application
   <br><br>
@@ -28,7 +94,6 @@
   <tr><td>Password</td><td><input size="20"></td></tr>
   <tr><td colspan=2><center><input type="submit"></td></tr>
   </table>
-  </center>
-
+  </center> -->
   </body>
 </html>
